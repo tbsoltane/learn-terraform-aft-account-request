@@ -2,20 +2,20 @@ module "sandbox" {
   source = "./modules/aft-account-request"
 
   control_tower_parameters = {
-    AccountEmail              = "<ACCOUNT EMAIL>"
-    AccountName               = "sandbox-aft"
-    ManagedOrganizationalUnit = "Learn AFT"
-    SSOUserEmail              = "<SSO EMAIL>"
-    SSOUserFirstName          = "Sandbox"
-    SSOUserLastName           = "AFT"
+    AccountEmail              = "tbsoltane+aws-sandbox1@gmail.com"
+    AccountName               = "sandbox1-aft"
+    ManagedOrganizationalUnit = "Sandbox"
+    SSOUserEmail              = "tbsoltane+aws-sandbox1@gmail.com"
+    SSOUserFirstName          = "Sandbox_first"
+    SSOUserLastName           = "AFT_last"
   }
 
   account_tags = {
-    "Learn Tutorial" = "AFT"
+    "Learn" = "AFT"
   }
 
   change_management_parameters = {
-    change_requested_by = "HashiCorp Learn"
+    change_requested_by = "TBS"
     change_reason       = "Learn AWS Control Tower Account Factory for Terraform"
   }
 
